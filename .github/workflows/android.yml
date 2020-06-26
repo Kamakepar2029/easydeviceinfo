@@ -21,8 +21,6 @@ jobs:
       run: chmod a=rwx ./gradlew
     - name: Sudo install
       run: sudo apt update && sudo apt install curl
-    - name: add
-      run: mv /home/runner/work/easydeviceinfo/easydeviceinfo/app/build/outputs/apk/debug/app-debug.apk /home/runner/work/easydeviceinfo/easydeviceinfo/make.apk
     - name: Build with Gradle
       run: ./gradlew build :app:build
     - name: check
